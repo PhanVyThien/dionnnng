@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Controls and text Fields"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TableLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/TextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <EditText
+                android:id="@+id/EdiText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a name"
+                android:inputType="text"
+                android:ems="10"
+                >
+                <requestFocus/>
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/TextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <EditText
+                android:id="@+id/EdiText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a number"
+                android:inputType="number"
+                android:ems="10"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/EdiText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Button"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="500px"
+        android:layout_height="250px"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Standard Button"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        <Button
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:orientation="vertical"
+        android:text="Button" />
+
+    <Button
+        android:id="@id/button3"
+        style="@style/Widget_Button_Inset"
+        android:layout_width="wrap_content"
+
+        android:layout_height="210dp"
+        android:text="Button" />
+</LinearLayout>
